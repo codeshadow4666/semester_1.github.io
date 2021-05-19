@@ -1,0 +1,74 @@
+1st complement:
+
+used to represent the signed numbers like 
+positive or negative
+
+ 0 = positive, 1 = negative
+....................................................
+For example:
+....................................................
+a value of positive 12 (decimal) would 
+be written as 01100 in binary, 
+but negative 12 (decimal) would be written as 11100. 
+....................................................
+                    2's Complement
+....................................................
+
+   12 (positve) = 01100
+
+   how to take 2's complement for -12 
+     
+              first write all numbers without changing any
+              until 1 is come.
+              after the one 1 change all number 1 to 0
+               & 0 to 1
+
+01100 
+  100  now change 1 to 0 & 0 to 1
+
+ -12 = 10100                
+
+ is more often used for representing negative numbers. 
+ In this system, a positive 12 is still 01100, but -12 
+ would be written as 10100. Notice that there is nothing 
+ instrinsically correct about one system over another. 
+ Either 11100 or 10100 can be used to represent -12
+
+....................................................
+how to take 2's complement of any binary number
+....................................................
+First take 1'st complement of specific number 
+then add 1 to the least significant bit to taking 
+2's complement.
+Example:
+
+01001   this is an binary number
+
+1'st complement
+10110
+2's complement
+10110
+   +1
+.......
+10111   2's complement is taken 
+.......   
+....................................................
+....................................................
+Note:       In 2's complement, all 
+          the positive numbers begin with a 0.
+....................................................
+....................................................
+Q:What advantage does 2's 
+  complement have over 1's complement?
+....................................................
+Answer:
+In 2's complement we have only one way to represent 0.
+ This simplifies our representation scheme.
+....................................................
+....................................................
+Practice: URL
+....................................................
+https://courses.cs.vt.edu/~csonline/
+NumberSystems/Questions/TwosComplement/index.html
+....................................................
+....................................................

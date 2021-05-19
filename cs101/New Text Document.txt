@@ -1,0 +1,27 @@
+ ...................Main Topics......................................
+
+///////////////////........module 14-21....................
+
+flip-flop:
+
+
+if both inputs is 0 then it retains the value
+
+if upper bit change to 1 then it change stored the value to 1.
+
+if lower bit change to 1 then it change stored the value to 0.
+
+.........................................................
+
+main memory contain billion of cells & each cell contain 8 bits. 
+
+household devices have few hundred of cells
+........................
+cell address:
+........................
+each cell in ram have the unique name called it's address.
+
+Flash Drive:
+
+repeatedly erasing data in the flash drive cause the damage 
+of silicon chamber.

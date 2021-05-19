@@ -1,0 +1,30 @@
+name                        description
+
+
+cout  <<                         "<<" is an  Insertion Operator
+
+cin >>                               ">>" is an extraction Operator
+
+
+
+
+
+
+
+
+
+.............................................Type Casting..........................................
+
+
+
+(float)var_name;      or double(var_name);
+
+
+
+
+
+.............................................literal of float , double and long double..........................................
+
+
+cout<<"this float value"<<2.23f                Capital F also can be used
+cout<<"this long double value"<<2.23l                Capital L also can be used
