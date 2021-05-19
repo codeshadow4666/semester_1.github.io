@@ -13,3 +13,14 @@ SDHC (High Capacity) can provide 32 GBs
 SDXC (Extendable Capacity) may exceed to TB. 
 
 Computer Aided Design (CAD)
+
+Lempel-Ziv-Welsh (LZW) 
+encoding
+
+adaptive dictionary encoding (also
+        known as dynamic dictionary encoding)
+
+
+....................................................
+Motion Picture Experts Group (MPEG)         
+....................................................
