@@ -1,0 +1,158 @@
+.................Finding string in a string.......................
+
+lastindexof() , indexof()       are used for Finding a string in the string
+
+
+.........................................................................
+.................Searching a string in  string.......................
+
+.search()            //method
+
+        It's almost like indexof() method , but we can't define that 
+        from where Searching   could starting. 
+        but we have this functionaly in indexof () method
+
+ syntax:
+
+             variable.search("hellow") ;
+Return:
+
+               -1   if not satisfied
+
+
+
+.........................................................................
+.................Searching a string in  string.....................
+
+                 ..........slice()..........
+
+purpose :
+             slice the content of string 
+syntax : 
+         slice(index(where to start),index(where to end))
+         for reverse 
+
+         slice(-index(where to start))     
+
+         note: in reverse , ending point does't accepted
+
+Return:
+        new sliced string
+
+.....................Substring()...............................
+
+
+
+purpose :
+             slice the content of string 
+syntax : 
+         similar to slice method 
+
+         but it does't take negative index 
+         so, it does't start from reverse
+
+Return:
+        new sliced string
+
+
+.....................Substr()...............................
+
+
+
+purpose :
+             slice the content of string 
+syntax : 
+         similar to slice method 
+
+         but it does't take negative index when starting 
+         index also given to it.
+         
+         note: it take negative index ( reverse order )
+                as a single argument.
+
+Return:
+        new sliced string
+
+
+
+
+
+.........................................................................
+..........................Replaicng Content In String...............................................
+.........................................................................
+          ..............replace()  method................
+replace();
+              used to raplace content in string , 
+              IF in the string ,there are two same words which you
+              are willing to replace then it will replace the first
+              word( who detected first);
+
+              Chase Sensitive
+argument: 
+            replace(searching word,Replaicng word)              
+
+syntax:
+                  replace("example","EXAMPLE")            ;
+
+Return: 
+          it's return new changed string  ,
+          it does't change or effect the orignal string 
+
+example:
+          let fruits = "1234567890111111112345678901232132";
+
+let a = fruits.replace("123456","one to six");
+console.log(`orignal ${fruits} \nAfter replacing = ${a}`);          
+         
+
+
+
+.........................................................................
+...........................CharAt() method..............................................
+CharAt(); 
+             used to check that which character is present
+             at a  particular position.
+Arguments:
+            CharAt(index number of Character);
+            
+syntax:
+             CharAt(4);
+Return: 
+             Return Character 
+example:
+            let fruits = "Ther are many stars in the space";
+
+let a = fruits.charAt(4);
+console.log(a);                          
+                 
+.........................................................................
+...........................CharCodeAt()..............................................
+CharCodeAt();
+
+            Same as above
+
+            But it's return untf-16 code of specific Character
+            ( like ascii code)
+.........................................................................
+.........................................................................
+...........................String to Array..............................................
+
+split()                                method
+
+                     used to convert string to array on ths basis of 
+                     specific condition
+
+syntax:
+                       string.split("specific condition")  ;
+EXAMPLE:
+                                        
+                 let fruits = "        There are many stars 
+                                        in the space           ";
+let b=fruits.trim();
+console.log(b.split(" "));
+
+
+
+                       
+.........................................................................
+

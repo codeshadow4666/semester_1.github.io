@@ -1,0 +1,74 @@
+..........................Mcqs..................................
+Name                      purpose
+........................................................................
+Null Character            '\0' used to terminate the string.
+
+                            The ASCII code of null character is all zeros
+
+Constant Pointer         The name of the array is constant pointer which 
+                          holds the memory address of the first element 
+                           of the array.
+
+........................................................................
+             ............. Importent Info....................
+In binary search algorithm, the ‘divide and conquer’ strategy is applied.
+he binary search is more efficient than the linear search.
+........................................................
+ Note that in the prototype of the array it's not neccessay to write names
+ of the parameters in function. However, if we do this, then will not be  
+ an error. The compiler will simply ignore these names. 
+ Example:
+ void function(name) ( char [], int ) ; 
+
+
+.......................................................
+                      call by value & Reference
+
+variables passed to the function by default mechanism 'call by value '
+Arrays passed to the function by default mechanism 'call by Reference '
+
+If we passed single element of the array like something[3]; then it's treated 
+as single variable. So , now, default mechanism will be 'call by value '
+
+........................................................................
+...................array name(pointer) & ordinary pointer................
+........................................................................
+The differnce between ordinary pointer & array name is that array name is a
+constan pointer .Thats means the array name will always point to 
+the start of the array. In other words,It's always contain the memory address
+of the first element of the array & can't be reasign a new address .
+........................................................................
+.........................pointer incremented........................................
+When a pointer is incremented, it actually jumps the number of memory spaces
+according to it's data type;
+Example:
+ integer pointer will jump to 4 bytes after incremented by 1
+........................................................................
+ Can we increment the yptr up to 12 times? 
+ And what will happen? Obviously, we can increment it up to 12 times. 
+ In this case, yptr will be pointing to some memory location 
+ containing garbage
+........................................................................
+............................Mcqs Ending.......................
+
+.......................Initialization..............................
+
+
+
+....................................................................
+int age [5] = {12, 13, 16, 13, 14}
+....................................................................
+char name [100] = {‘i’, ‘m’, ‘r’, ‘a’, ‘n’}; 
+....................................................................
+Tips
+
+. A character array can be initialized using a string literal 
+. Individual characters in a string stored in an array can be accessed directly 
+  using array subscript 
+. Arrays are passed to functions by reference 
+. To pass an array to a function, the name of the array(without any brackets) is passed 
+  along with its size 
+. To receive an array, the function’s parameter list must specify that an array will be 
+  received 
+. Including variable names in function prototype is unnecessary. The compiler ignores 
+  these names.

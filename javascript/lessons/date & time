@@ -1,0 +1,82 @@
+there are 4 methods to find date by js.
+
+.........................................................
+let a= new Date();
+console.log(a);
+
+// output:     2021-05-18T06:19:09.916Z
+.........................................................
+let a= new Date().toLocaleString();
+console.log(a);
+// output:     5/18/2021, 11:31:25 AM
+.........................................................
+let a= new Date().toString();
+console.log(a);
+
+// output:     Tue May 18 2021 11:32:21 
+                GMT+0500 (Pakistan Standard Time)
+
+....................Date.now() .....................................
+Date.now():
+ 
+            returns miliseconds from january 1,1970
+Example:
+                 let a= Date.now();
+           console.log(new Date(a).toLocaleString());            
+......................................................
+......................................................
+//  Dates Method
+const curDate = new Date();
+// // how to get the indivisual date
+console.log(curDate.toLoca1eString());
+console.log(curDate.getFullYear());
+console.10g(curDate.getMonth()); // 0-11 jan to dec
+console.log(curDate.getDate());
+console.log(curDate.getDay());  
+......................................................
+......................................................
+...................how to set date...................................
+......................................................
+// // how to set the indivisual date
+console.log(curDate.$etFullYead(2022));
+// The setFullYear() method can optionally set month and day
+console.log(curDate.SetFu11Yea?(2022, 10, 5));
+console.log(curDate.setMonth(10)); // 0—11 jam to dec
+console.log(curDate.setDate(5));
+console.log(curDate.toLocaleString());
+
+......................................................
+......................................................
+.......................how to set time...............................
+const curTime = new Date();
+// how to get the indivisual Time
+// console.log(curTime.getTime()D;
+// // The getTime() method returns the number of milliseconds
+console.log(curTime.getHours());
+// // The getHours() method returns the hours of a date as a
+// console.log(curTime.getMinutes());
+// console.log(curTime.getSeconds());
+// console.log(curTime.getMilliseconds());
+
+......................................................
+......................................................
+......................................................
+
+......................................................
+Note :
+......................................................
+     new Date().getTime();    === Date.now()
+
+      both returns miliseconds from january 1,1970
+......................................................
+......................................................
+......................................................
+/ // Practice Time
+new Date().toLoca1eTimeString(); // 11:18:48 AM
+//
+new Date().toLoca1eDateString(); // 11/16/2015
+//
+new Date().toLoca1eString(); // 11/16/2015, 11:18:48 PM
+
+......................................................
+......................................................

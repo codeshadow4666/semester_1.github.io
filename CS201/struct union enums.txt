@@ -1,0 +1,38 @@
+.....................Structures.....................
+
+what is?      simply a data type 
+
+................................................................
+example or syntax:
+................................................................
+typedef struct employee
+{
+/* data */
+int eId;
+char favchbr;
+float salary;
+} ep;
+
+int main(){
+EEIharry;
+struct employee shubham;
+struct employee rohanDas;
+harry.eId = 1;
+harry.favChar = 'c';
+harry.salary = 126669969;
+}
+................................................................
+typedef        if we use it then we have never need to write
+                struct (datatype name) during the intialinzing a 
+                variable.
+................................................................
+Structures intialinzing :
+
+student s1 = {“Ali”, “CS201”, 19, 2002 };  
+    
+ structure type can be declared. 
+Initialization may take place at the time of declaration
+................................................................
+.......................Union....................................
+
+................................................................

@@ -1,0 +1,16 @@
+
+.....................................let vs const vs var.......................
+
+
+
+let           have block scope         (like c++ variables )
+
+var            have  Function scope        
+
+
+
+
+             there are 5 falsy values in javascript 
+
+             1. 0    2. "" (means non or nothing)       3. null       4. NaN (not a number) 5.Undefined    6.false (boolean)
+             

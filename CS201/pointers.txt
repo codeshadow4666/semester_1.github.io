@@ -1,0 +1,88 @@
+
+............................Declaration...............................
+
+int *ptr1, *ptr2, *ptr3 ;         correct 
+
+int *ptr, x, a [10] ;               correct
+............................Assigning Address..........................
+
+ ptr = &x ;                  (& is Address operator)
+
+
+ tips:
+  A pointer can be initialized by assigning 
+either value 0 or the word NULL. The NULL is a global variable
+.......................................................................
+Null pointer:
+.......................................................................
+ ptr = NULL; is called null pointer which 
+points to nothing.
+
+ Similarly, when we assign a zero to a pointer like ptr = 0; 
+ it means that the pointer is pointing to nothing at the moment.
+.......................................................................
+..........................important Points.........................
+........................................................................
+.........................pointer incremented........................................
+When a pointer is incremented, it actually jumps the number of memory spaces
+according to it's data type;
+Example:
+ integer pointer will jump to 4 bytes after incremented by 1
+ float:
+  will take 8 bytes
+  char:
+  will take 1 byte
+........................................................................
+.........................Addition & Substraction........................
+Addition:
+         we can't add pointer address (error)
+Substraction:
+                Yes, we can.
+Example:
+     Suppose we have two pointers pointing to the same memory address. 
+When we subtract these, the answer will be zero. Similarly, if a pointer is
+pointing to the first element of an integer array while another pointer
+pointing to the second element of the array. We can subtract the first
+pointer from second one. Here the answer will be one, i.e. how many 
+array elements are these two pointers apart
+
+
+yptr1 = &y[0]; 
+ yptr2 = &y[3]; 
+ cout << “ The difference = “ << yptr2 - yptr1;                          
+
+Output:The difference = 3
+........................................................................
+ Can we increment the yptr up to 12 times? 
+ And what will happen? Obviously, we can increment it up to 12 times. 
+ In this case, yptr will be pointing to some memory location 
+ containing garbage
+........................................................................
+........................................................................
+...................increment value & address..............................
+When we want to increment the pointer address  to point next location then 
+,we write as (yptr++); Use parenthesis when incrementing the address. 
+If we want to increment the value where the pointer point's then 
+it can be written as (*yptr) ++
+........................................................................
+........................................................................
+........................................................................
+
+........................................................................
+CS201  page 154 is very important for const pointer
+........................................................................
+........................................................................
+........................................................................
+
+........................................................................
+Lecture 15: Tips:
+........................................................................
+• While incrementing the pointers, use the parenthesis 
+• Increment and decrement the pointers while using arrays 
+• When a pointer is incremented or decremented, it changes the address 
+  by the CS201 – Introduction to Programming   number of bytes occupied
+  by the data type that the pointer points to 
+• Use key word const with pointers to avoid unwanted changes 
+• The name of array is a constant pointer. It cannot be reassigned
+........................................................................
+........................................................................

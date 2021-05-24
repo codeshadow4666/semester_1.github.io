@@ -1,0 +1,147 @@
+/..............lecture no.11.......................
+...........................................................
+x Introduction 
+x Arrays 
+x Initialization of Arrays 
+x Sample Program 1 
+x Copying Arrays
+x linear search
+x The Keyword ‘const’ 
+x Tips 
+...........................................................
+......................lecture no.12........................ 
+...........................................................
+x Character Arrays 
+x Initialization Of Character Arrays 
+x Arrays Comparis
+x Sorting Arrays
+x Searching arrays 
+x Functions And arrays 
+x Example 1 
+x Multidimensional Arrays 
+x Example 2 
+x Tips 
+...........................................................
+...........................................................
+......................lecture no.14........................ 
+...........................................................
+1) Pointers 
+2) Declaration of Pointers 
+Example 1 (Bubble Sort) 
+Pointers and Call By Reference 
+5) Example 2 
+...........................................................
+......................lecture no.15........................ 
+...........................158.............................
+
+7) Relationship between Pointers and Arrays 
+ions and Arithmetic 
+9) Pointers Comparison 
+8) Pointer Express
+10) Pointer, String and Arrays 
+...........................................................
+......................lecture no.16........................ 
+...........................................................
+
+x Pointers (continued) 
+x Multi-dimensional Ar
+x Pointer to pointer 
+x comand line arguments
+
+...........................................................
+......................lecture no.17........................ 
+...........................................................
+
+x String Handling 
+x String Manipulation Functions 
+x Character Handling Functions 
+x Sample Program 
+x String Conversion Functions 
+x String Functions 
+x Search Functions 
+x Examples 
+x Exercises 
+
+...........................................................
+......................lecture no.18........................ 
+...........................................................
+
+Files 
+Text File Handling 
+ Example 1
+Output File Handling
+Example 2
+ Tips 
+...........................................................
+......................lecture no.19........................ 
+...........................................................
+ Sequential Access Files (Continued) 
+x Last Lecture Reviewed 
+x Random Access Files 
+- Position in a File 
+- Setting the Position 
+- Example of seekg() and tellg() Functions 
+- Example of Data Insertion in the Middle of a File 
+- Efficient Way of Reading and Writing Files 
+- Copying a File in Reverse Order
+x Sample Program 1 
+x Sample Program 2 
+x Exercises 
+
+...........................................................
+......................lecture no.20........................ 
+...........................................................
+
+) Structures 
+ - Declaration of a Structure 
+ - Initializing Structures 
+ - Functions and structures 
+ - Arrays of structures 
+ - sizeof operator 
+2) Sample Program 1 
+3) Sample Program 2 
+4) Unions 
+...........................................................
+......................lecture no.21........................ 
+...........................................................
+
+Bit Manipulation 
+Bit Manipulation Operators 
+AND Operator 
+OR Operator 
+Exclusive OR Operator 
+NOT Operator 
+ Bit Flags 
+ Masking 
+ Unsigned Integers 
+Sample Program 
+Shift Operators 
+...........................................................
+......................lecture no.22........................ 
+...........................................................
+
+Bitwise Manipulation and Assignment Operator 
+x Design Recipes 
+x Variables 
+x Data Types 
+x Operators 
+- Arithmetic operators 
+- Logical operators 
+- Bitwise operators 
+x Programming Constructs 
+x Decisions 
+- if statement 
+- Nested if statement 
+x Loops 
+- while loop 
+- do-while loop 
+- for loop 
+x switch, break and continue Statements 
+x Functions 
+- Function Calling 
+- Top-Down Methodology 
+x Arrays 
+x Pointers 
+x File I/O 
+
+...........................................................

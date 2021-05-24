@@ -1,0 +1,19 @@
+....................property Access.....................
+
+let fruits = "Ther are many stars in the space";
+
+let b=fruits.length-1;
+
+console.log(fruits[b]);
+
+output:      e 
+.......................................................
+
+......................Trim method.................................
+trim();
+
+     remove the whitespaces from the start & end of the string
+syntax:
+     
+console.log(fruits.trim());
+.......................................................

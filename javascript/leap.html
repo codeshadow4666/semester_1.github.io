@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Leap Year</title>
+
+</head>
+
+<style>
+    button,
+    input {
+        outline: none;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        margin-top: 30px;
+        width: 400px;
+        height: 30px;
+    }
+</style>
+<!-- .................. body starting here.................................. -->
+
+<body style="background-color: black;">
+    <div style="display: flex; justify-content: center;align-items:center;width: 100vw;height: 100vh; ">
+
+        <div
+            style=" flex-direction: column; width: 50%; height: 50%;background-color: rgb(99, 98, 98);display: flex; justify-content: center;align-items:center;">
+            <h1>Check Leap Year</h1>
+            <input id="input" type="number" placeholder="Enter Year">
+            <button  id="button"
+                style="width: 100px; height: 30px; background-color: rgb(5, 137, 155); color: rgb(0, 0, 0);margin: 40px 0px;">
+                CHECK
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- javascript starting  -->
+    <script>
+
+        $(document).ready(function(){
+            $("#button").click(function(){
+
+                var year = $("#input").val();
+      
+      if((year % 4 ==0)||(year % 400 ==0))
+      {
+          alert(`${year} is  a leap year`);
+      }
+      else{
+          alert(`${year} is  a common year`);
+      }
+            })
+         
+        })
+
+  
+       
+    </script>
+    <!-- javascript ending -->
+
+</body>
+
+</html>

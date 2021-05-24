@@ -1,0 +1,234 @@
+Array syntax;
+
+
+var countries=[ 'pakistan',"India","America", "United Kingdom"];
+
+
+
+
+................filteration and searching in array.........................
+
+
+
+method's   
+ 
+         indexof();
+
+         syntax
+
+
+          arrayname.indexof("searching_letter",2(index no where to start searching))
+
+
+ lastindexof();
+
+ syntax
+
+  same as above
+
+
+  but,  it search backward
+
+
+  both returns -1  if nothing match
+
+
+  ..............................................................................
+
+  .include();
+
+  it's check that certain value is present in array .
+  if present then it's return True or otherwise return false (boolean value)
+
+
+  syntax;
+
+
+  same as above
+
+   ...............................filteration.................................
+
+....................................................
+find();
+....................................................
+problem :    return only one value which satisfied , but in reality there are 
+                more values 
+
+used to filter the price or much more
+
+return:  return Undefined if condition is not satisfied
+
+syntax :
+
+
+
+      variable_name.find((anyname)=> anyname >400);
+
+
+....................................................
+
+findIndex();
+....................................................
+almost same as above but it's returns index value if condition is satisfied
+
+return :    return -1 if condition is not satisfied
+
+
+
+....................................................
+filter();
+....................................................
+
+satisfied : reutrn  all the satisfied values or results in the array
+
+Unsatified :  return empty array []
+
+
+
+......................Array sorting..............................
+....................................................
+sort();                           this is an method  
+
+
+sort in asending order              bigger to smaller
+
+99999,1, 2323,10000,3433234334
+ 
+1,10000,2323,3233234334,999999
+.......................................................................
+
+
+
+///////////...........add new data in array..........................
+
+              1st method
+              
+push();                             //method 
+
+it add one or more  array element in the end of array.
+
+return :         new length of the array 
+
+syntax:
+
+
+ arrayname.push("milk","water","chocolate");
+
+ how to chech arrat length
+ 
+     let arraylength =    arrayname.push("milk","water","chocolate");
+
+     console.log("arraylength");
+
+     .......................................................................
+
+
+              2st method
+
+unshift();                             //method 
+
+it add one or more  array element at the start of the  array.
+
+return :         new length of the array 
+
+syntax:
+
+
+ arrayname.unshift("milk","water","chocolate");
+
+ how to chech array length
+ 
+     let arraylength =    arrayname.unshift("milk","water","chocolate");
+
+     console.log("arraylength");
+
+     
+     .......................................................................
+
+     .......................................................................
+
+
+
+///////////...........Remove data in array..........................
+
+
+                             1st method
+
+pop(); 
+
+   it's delete the array element at the end of the array 
+
+return:          return removed data or array element
+     
+     .......................................................................
+
+     .......................................................................
+
+                             2nd method
+
+Shift(); 
+
+   it's delete the array element at the start  of the array 
+
+return:          return removed data or array element
+     
+     .............................add , remove ..........................................
+                           ultimate method 
+      ..........................splice().............................
+    splice();     takes 3 parameters 1st index 2nd how much element 
+                   remove 0 means nothing 3rd what data you want to write
+syntax:
+
+let countries=["pakistan","india","america","Uninted Kingdom","japan","korea"];
+
+let indexis=countries.indexOf("japan");
+if(indexis!=-1){
+
+    var returncoun=countries.splice(indexis,1,"Australia");
+    console.log(countries);
+}
+else{
+    console.log("country not found in array");
+}
+
+    resturn:            return removed data or element
+
+
+     .......................................................................
+     .................................Map( )       method......................................
+     map();
+               almost like ForEach() but returns  new array with the results of 
+               call back function
+
+               syntax
+               
+let numbers=[1,2,3,4,5,6]
+
+let a= numbers.map((elements,index)=>{
+    return `Number ${elements} , it's square = ${elements*elements} `;
+})
+console.log(a);
+.......................................................................
+.............................reduce method..........................................
+reduce();
+
+used to convert 2d or 3d array into singal d & many more uses
+
+arguments;
+
+acumulator ( result of value )
+value
+index
+source array ( where data is receiving )
+
+
+examples;        how to convert 2d array into one data
+let numbers=[[12],[2323],[45],[6],[109]];
+
+let r=numbers.reduce((acum,value)=>{
+    return acum.concat(value);
+})
+
+
+console.log(numbers);
+console.log(r); 

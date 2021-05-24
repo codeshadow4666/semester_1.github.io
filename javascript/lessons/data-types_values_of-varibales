@@ -1,0 +1,24 @@
+data types :
+  
+          string 
+          undifiend
+          boolaen
+          symbol
+
+
+functions:
+
+           typeof(Variable name);               used to find data type of variable
+                                           
+isNaN(Variable Name);                            return true if variable contain not a number other wise return false
+ ................................................................................
+
+ note :
+
+NaN  stand for Not-a -Number
+
+
+
+  null datatype is object but this is bug...... 
+
+  When we subtract two strings then NaN return.........                                          
