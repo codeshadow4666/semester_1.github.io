@@ -5,81 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last Moment</title>
+    <title>practice</title>
     <style>
-        * {
-            padding: 0%;
-            margin: 0px;
-            box-sizing: border-box;
-
-        }
-
-        /* body {
-            background: linear-gradient(#fd0000cf, black);
-        } */
-
-        div {
-            width: 100%;
-            height: 100vh;
+        body {
             display: grid;
             place-items: center;
+
         }
 
-        div button {
-            background: linear-gradient(#6b6464cf, black);
-            color: wheat;
-            height: 70px;
-            width: 150px;
-            font-size: 95%;
-        }
-
-        button:hover {
-            background: linear-gradient(#000000, #6b00ff33);
-            cursor: pointer;
+        input {
+            width: 300px;
+            height: 50px;
+            font-size: 1rem;
         }
     </style>
 </head>
 
-<body name="bodyh" id="body">
-    <div>
-        <button id="btn" type="button" onclick="setRandomColor()">
-            LAST MOMENT
-        </button>
+<body>
+    <div id="result">
+
     </div>
+    <br><br>
+    <form action="/action_page.php">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p style="opacity: 0;" id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores temporibus recusandae harum est
+        inventore nam magnam perspiciatis, cumque explicabo alias asperiores repudiandae maiores libero quibusdam quas
+        ea fugit nobis?
+    </p>
+    <button onclick="fading()" id="btnbtn">
+        click me
+    </button>
+    <script>
+        const aa = document.getElementById('cars');
+        aa.addEventListener('change', function () {
+            const result = document.getElementById('result');
+            let c = aa.value;
+
+            result.innerHTML = `Selected Car = ${aa.value}`;
 
 
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-   
-            // alert("welcome")
-            // if(confirm("do you want to change the color of background"))
-
-
-            function getRandomColor() {
-                var letters = '0123456789ABCDEF';
-                var color = '#';
-                for (var i = 0; i < 6; i++) {
-                    color += letters[Math.floor(Math.random() * 16)];
-                }
-                return color;
-            }
-            function setRandomColor() {
-                let i=0
-              
-
-                    $("#body").css("background-color", getRandomColor());
-      setInterval(() => {
-        setRandomColor();
-    
-      }, 300);
-
-            }
-
+            document.body.style.background = 'red';
+        });
         
+
+        function fading(){
+            let a=0.1;
+           let interval= setInterval(() => {
+                let p=document.getElementById('para');
+                
+                p.style.opacity=a;
+                a=a+0.1;
+                let check =Math.floor(a);
+                if(check==1){
+                    console.log('ok');
+                    clearInterval(interval);
+
+                }
+               
+            }, 200);
+        }
+
+
     </script>
+
 </body>
 
 </html>

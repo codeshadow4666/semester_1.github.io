@@ -1,5 +1,8 @@
 .................................../ fat arrow Function/.........................................................
 
 
-const function_name = () => `pakistan is an ${popular}`;             // if only 1 line code in function then
-                                                                        no need to used curly braces       
+const function_name = () => `pakistan is an ${popular}`;            
+                     
+                     
+                     // if only 1 line code in function then
+                       no need to used curly braces       

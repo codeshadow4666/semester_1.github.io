@@ -85,4 +85,55 @@ Lecture 15: Tips:
 • Use key word const with pointers to avoid unwanted changes 
 • The name of array is a constant pointer. It cannot be reassigned
 ........................................................................
-........................................................................
+........................................................................\
+........................................................................\
+...............referance variable vs pointer...........................
+........................................................................\
+
+ int b=10;
+ int &a=b;                 here a is referance variable contain the Address
+ &a=c; error                            of b;Now, a cannot reassigned a new memory 
+                            address
+int b=10;
+int *a=&b;   
+a=&c;  ok          here, a is an pointer variable, unlike referance var
+                         ,pointers can be reassigned a new memory address                                                            
+........................................................................\
+........................................................................\
+.................2D Arrays & pointer ...................................\
+........................................................................\
+ptr = *multi; // ‘ptr’ is assigned the starting address of the first row 
+
+                    this method work in 2d arrays 
+........................................................................\
+................1D Arrays.................................................\
+ptr = multi; // ‘ptr’ is assigned the starting address of the first row 
+                    this method work in 1d arrays 
+........................................................................\
+........................................................................\
+                  lecture 16 tips 
+........................................................................\
+Tips 
+........................................................................\
+¾ Pointers and arrays are closely related in C. The array names can be used as 
+pointers but only as constant pointers. 
+¾ A function receiving a multi-dimensional array as a parameter must minimally 
+define all dimensions except the leftmost one. 
+¾ Each time a pointer is incremented, it points to the memory location of the next 
+element of its base type but in case of
+ two-dimensional array, if you add some CS201 – Introduction to Programming 
+
+number in a two-dimensional array name, it will jump as many rows as the added 
+number. 
+¾ If the array is to be accessed in random order, then the pointer approach may not 
+be better than array indexing. 
+¾ The use of pointers may reduce the wastage of memory space. As discussed in this 
+lecture if we store a set of character strings
+ of different lengths in a twodimensional array, the memory space is wasted. 
+¾ Pointers may be arrayed (stored in an array) like any other data type. 
+¾ An array of pointers is the same as pointers to pointers. 
+¾ Although, you can give your desired names to the command line parameters 
+inside ‘main()’ function but ‘argc’ and ‘argv’ are conventionally used. 
+........................................................................\
+........................................................................\
+........................................................................\

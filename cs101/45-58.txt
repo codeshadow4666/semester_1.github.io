@@ -1,0 +1,148 @@
+.......................MCQS..........................
+.Early systems were able to service 30 users simultaneously.
+
+A chain of directories within directories is called a 
+directory path. Paths
+
+most file managers allow files to be grouped into a bundle 
+called a directory or folder.
+
+This data is 
+divided into uniform sized units called pages, which are 
+typically a few KB in size. 
+
+While it is possible to update operating systems and boot
+ loaders stored in ROM 
+(often called a firmware update), 
+..........................................................
+
+
+....................Module no.45..........................
+...................Operating System : History.............
+..........................................................
+-bacth processing
+-Interactive Processing
+..........................................................
+......................MOdule no.46........................
+Real time Processing:
+                     Computer need to perform a task in a 
+certain deadlines (time) according to real-World Environment.
+..........................................................
+Time Sharing:
+              Earlier Computer are expensive so, One Computer 
+is   used to operate different user by using time sharing tech.
+There are 3 states in Time Sharing :
+.Active        .Ready            . Waiting
+..........................................................
+Multi-Tasking:
+              One user perform Multiple Task on a computer.
+..........................................................
+Multi-Programming:
+ multiprogramming operating system allows more than one 
+ program to run simultaneously using a single CPU
+
+..........................................................
+.....................Module 47............................
+..........................................................
+Load Balancing:
+               Today's computers have more then one cpu's
+Super computers may have hundreds to thousand of cpu.
+So, load balancing is used to given the new task to free CPU.
+It dynamically allocate tasks to various CPUs for efficent 
+use of CPU's.
+
+..........................................................
+Scaling:
+         Breaking the tasks into a number of subtask according 
+         to the avaiable cpu's are called Scaling.
+
+..........................................................
+Embedded Systems:
+
+cell phone ,medical devices & other home applainces have their own
+system are called Embedded System.
+..........................................................
+
+
+.....................Module no.48..........................
+Utility Software:
+
+                Such software which extend the capability of 
+                OS but not included in operatin System are 
+                called Utility Software.
+Example:
+       Software fore handling network Communication
+       read and write data from memory to cd 
+       compress & decompress software                 
+..........................................................
+.......................Module no.49.......................
+Operating System Compotents:
+1-User Interface
+2-Kernal
+
+..........................................................
+.User Interface:
+..........................................................
+                  The portion of operating system which handles the 
+                  communication between user & system is called 
+                  user Interface.
+                  In older OS it's also known as Shell
+..........................................................
+Window Manager:
+                 It is component of Graphical User Interface(GUI Shell)
+.That Controls the placement & appearance of windows of  different
+ applications  on screen or monitor.   
+
+ Linux window managers:
+
+  .KDE .Gnome              
+..........................................................
+.......................Module no.50...........................
+..........................................................
+..........................................................
+Kernal:
+         Internal part of Operating system is called kernal.
+Compotents:
+.File Manager
+.Device  Drivers:
+.Memory Managers   
+..........................................................
+
+Device Driver:
+               such software which communicate with controllers
+               or sometime directly to peripheral Devices.
+
+File Manager:
+              it's task to manage the file & folder in mass storage
+              .Keeping the file data seprate from each other.
+              It's perform all functions which is needed for file
+              handling.
+.Memory Manager:
+              It's manage the Ram . allocate the space. check 
+              which portion is free of RAM.
+
+Pagging:
+           Sometime RAM space is not enough to perform certain 
+           task so , memory manager take a some space from 
+           mass storage for temporarily use .And rotating data 
+           back & forth from main memory to mass storage .
+
+                                                     
+Virtual Memory :          
+
+                 Such memory space created by pagging is called 
+                 virtual memory.
+..........................................................
+..........................Module 51.......................
+boot loader:
+             a program used to load OS from mass storage to 
+             main memory.it's Permanently stored in ROM.
+ROM:
+      is an non-votaile memory .Ram contain a very small part of 
+      non-volatile memory called ROM.
+Booting Process:
+                Operating System is stored on mass storage.
+                boot loader loads the Os From mass storage to 
+                RAM.       
+                               
+..........................................................

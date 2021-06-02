@@ -1,0 +1,191 @@
+ ..................MCQS..............................
+ -AND operations are useful when manipulating
+  other types of bit map.
+.........................................................
+
+ 
+....................MCQS ENDING..........................
+ a machine’s instructions can be categorized into three 
+groupings: 
+.........................................................
+(1) the data transfer group,
+.........................................................
+he data transfer group consists of instructions that request
+ the movement of data from one location to 
+another.
+First step:
+-Load :      from memory to registor
+Second step:
+-Store:        registor to memory
+.........................................................
+.........................................................
+I/O instructions:
+.........................................................
+ Such instructions handle the input/output (I/O) activities
+  of the machine, they are called I/O instructions
+.........................................................
+(2) the arithmetic/logic group,
+.........................................................
+.........................................................
+Perfom arithmetic operation & also logic( boolaen 
+Operation like AND OR XOR ,SHIFT,ROTATE)
+.........................................................
+.........................................................
+(3) the control group.
+.........................................................
+Perfom CONTROL instructions like Jump (branch),
+conditional & Unconditional jump
+.........................................................
+..................Logic Operators(38)....................
+.........................................................
+AND:       real life use
+
+here is a binary number 10011101  
+if you want to that last 4 bit will not change then
+here is a technique called masking.
+
+1001 1101
+0000 1111     AND
+...........
+0000 1101         last 4 bit has not change
+
+EXAMPLE: 
+In RGB color if we want to eliminate red then we use this
+ technique.In RGB 3 color contain 1 byte 1 byte 1 byte
+.........................................................
+OR:         Real life use
+.........................................................
+If we want to change specific bit without changing other
+bits then we use OR;
+
+1001 1101     if want to change 3rd bit from left to right then 
+0010 0000 OR    just use bit 1 & perform or operation
+...........
+1011 1101
+.........................................................
+.........................................................
+XOR:       Real life use
+.........................................................
+It's used to invert the images color 
+it convert the 0 to 1 & 1 to 0.
+EXAMPLE:
+
+1001 1101
+1111 1111     XOR
+...........
+0110 0010 
+.........................................................
+
+.........................................................
+.................Rotation & Shift(39)....................
+.........................................................
+Circular shift or rotation;
+
+onsider a register containing a byte of bits. 
+If we shift its contents one bit to the right
+we imagine the rightmost bit falling off the edge and 
+a hole appearing at the leftmost end.One technique is to place the 
+bit that fell off the right end in the hole at the left end.
+
+EXAMPLE:
+
+suppose  a byte 
+10101 0011     we perform Right Circular Shift on it
+               last bit (here is 1) will shift to start
+110101 001               
+
+.........................................................
+.........................................................
+Logical Shift:
+.........................................................
+
+Another technique is to discard the bit that falls 
+off the edge and always fill the hole with a 0. The term 
+logical shift is used for such operation.
+
+.........................................................
+Arithematic Shift:
+.........................................................
+Shifts that leave the sign bit unchanged are sometimes 
+called arithmetic shifts.
+.........................................................
+.........................................................
+.....................Controller(41)......................
+Controller:
+.........................................................
+Communication between a computer and other devices 
+is normally handled through an intermediary 
+apparatus known as a controller.
+                  or
+In computer system an controller a chip, expansion card or 
+stand-alone device used to Communicate with peripheral 
+devices. It's work like a link between computer & 
+peripheral devices.
+
+Ports:
+
+controller connects the peripheral via cable. In computer
+there are many connectors also known as ports used to connect
+the peripheral devices .
+
+.........................................................
+...................DMA (Direct Memory Access).............
+Direct memory access is a feature of computer systems that 
+allows certain hardware subsystems to access main 
+memory independent of the central processing unit
+             or
+DMA is a ability of computer system that allows the computer's
+subsystems to independently access the main memory without 
+depending on the CPU.
+.........................................................
+Bottle Neck:
+.........................................................
+If CPU & other subsystems of computer competing for the same
+bus then such problem called bottle neck.
+.........................................................
+.........................................................
+Handshaking:
+.........................................................
+CPU is very much faster than peripheral devices.Such as printer
+can't print page fastly so, CPU can't wait for printer to print 
+page. there to solve this problem we use handskaing technique.
+According to handskaing technique printer will tell the CPU when 
+it will free to receive data . so, Cpu can perform other task 
+during it.
+.........................................................
+
+
+....................Serial & parallel(43)..................
+.........................................................
+serial Communication:
+one signal at one time
+only have one path
+slower than parrallel
+for short distance 
+example:
+ usb,Fireware
+
+parallel Communication:
+
+several singnal at the same time on different paths
+have many path 
+very faster 
+for longer distances
+Example:
+
+-Ethernet
+
+
+..................throughput & pipelining...................
+Throughput:
+ 
+Amout of work done by a machine in the given time.
+.........................................................
+pipelining:
+.........................................................
+it's used to increase the throughput of the computer.
+Pipelining is an  technique where multiple 
+instructions are overlapped in execution.
+by this technique, computer does't need to wait for finishing 
+perivous tasks.
+.........................................................
