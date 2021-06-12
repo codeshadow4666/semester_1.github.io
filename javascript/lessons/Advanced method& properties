@@ -17,3 +17,26 @@ syntax:
      
 console.log(fruits.trim());
 .......................................................
+.....................value..................................
+used for getting value of any field
+syntax:
+varabilebname.value 
+.......................................................
+....................valueAsNumber...................................
+used for getting numberic value of any field
+syntax:
+
+varabilebname.valueAsNumber 
+
+note:  input field type muse be number other wise it return NaN
+.......................................................
+......................string to number....................
+There are several ways to achieve it:
+Using the unary plus operator:
+var n = +str;
+The Number constructor:
+var n = Number(str);
+The parseFloat function:
+var n = parseFloat(str); 
+
+

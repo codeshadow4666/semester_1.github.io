@@ -9,19 +9,19 @@ cin >>                               ">>" is an extraction Operator
 
 
 .....................................................................................
-referance variable               int &a; used to store address of other variable
+referance variable         int &a; used to store address of other variable
 
 Example:  int b=10;
            int &a=b;
 .....................................................................................
 
 .....................................................................................
-Static variable                  declaration & initialization line execute only once 
+Static variable          declaration & initialization line execute only once 
  
  Syntax:
  Static int a=0;
 .....................................................................................
-.............................................Type Casting..........................................
+.......................Type Casting..........................................
 
 
 
@@ -31,8 +31,15 @@ Static variable                  declaration & initialization line execute only 
 
 
 
-.............................................literal of float , double and long double..........................................
+...................literal of float , double and long double..........................................
 
 
-cout<<"this float value"<<2.23f                Capital F also can be used
-cout<<"this long double value"<<2.23l                Capital L also can be used
+cout<<"this float value"<<2.23f          Capital F also can be used
+cout<<"this long double value"<<2.23l   Capital L also can be used
+.........................Convert string to interger................................
+#include <sstream>           // first include it 
+stringstream n1,n2;
+    n1<<a;                 here a , b are strings and contain characters
+    n2<<b;
+    n1>>num1;
+    n2>>num2;

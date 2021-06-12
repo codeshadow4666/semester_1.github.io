@@ -54,7 +54,7 @@ use of CPU's.
 ..........................................................
 Scaling:
          Breaking the tasks into a number of subtask according 
-         to the avaiable cpu's are called Scaling.
+         to the avaiable cpu's capacity are called Scaling.
 
 ..........................................................
 Embedded Systems:

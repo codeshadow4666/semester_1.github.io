@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./contact.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
   <title>Hello, world!</title>
@@ -18,37 +19,31 @@
 <body>
   <!-- body starting here -->
   <!-- nav starting  -->
-  <nav class="navbar navbar-expand-lg text-capitalize ">
+  <nav id="navbarhead" class="navbar navbar-expand-lg text-capitalize ">
     <a class="navbar-brand" href="#"><img src="./img/logo.gif" class="img-fluid" id="logo" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <button id="navbtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars fa-2x" style="color: white;    font-size: 30px;"></i>
     </button>
     <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav mx-auto">
+      <ul id="navulli" class="navbar-nav mx-auto">
         <li class="nav-item active">
           <a class="nav-link  aa" href="#">Home </a>
         </li>
         <li class="nav-item">
           <a class="nav-link aa" href="#">About Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link aa" href="#">Porfolio</a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link aa" href="#">Features</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link aa" href="#">Blog</a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link aa" href="#">Pricing</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link aa" href="#">Short-codes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link aa" href="#">Contact</a>
+          <a type="button" class="nav-link aa" data-toggle="modal" data-target="#staticBackdrop" href="#">Contact</a>
         </li>
 
       </ul>
@@ -70,13 +65,13 @@
       <div class="carousel-inner">
         <div id="item1" class="carousel-item active">
           <div class="carousel-caption capton d-none d-md-block">
-            <h5>Unique & Modern Design</h5>
-            <h1>Unique Creation</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing.
+            <h5 class="carh5">Unique & Modern Design</h5>
+            <h1 class="carh1">Unique Creation</h1>
+            <p class="carp"> Lorem ipsum dolor sit amet consectetur adipisicing.
               Lorem ipsum dolor sit amet consecte</p>
 
 
-            <button style="width: 140px;
+            <button data-toggle="modal" data-target="#staticBackdrop" style="width: 140px;
           height: 53px;
           
           " class="btn custombtn btn-outline-light my-4">
@@ -86,13 +81,13 @@
         </div>
         <div id="item2" class="carousel-item">
           <div class="carousel-caption capton d-none d-md-block">
-            <h5>Unique & Modern Design</h5>
-            <h1>Unique Creation</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing.
+            <h5 class="carh5">Photoshop Design</h5>
+            <h1 class="carh1">Web Legend</h1>
+            <p class="carp"> Lorem ipsum dolor sit amet consectetur adipisicing.
               Lorem ipsum dolor sit amet consecte</p>
 
 
-            <button style="width: 140px;
+            <button data-toggle="modal" data-target="#staticBackdrop" style="width: 140px;
           height: 53px;
           
           " class="btn custombtn btn-outline-light my-4">
@@ -102,13 +97,13 @@
         </div>
         <div id="item3" class="carousel-item">
           <div class="carousel-caption capton d-none d-md-block">
-            <h5>Unique & Modern Design</h5>
-            <h1>Unique Creation</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing.
+            <h5 class="carh5">100% Responsive</h5>
+            <h1 class="carh1">Nature & Beauty</h1>
+            <p class="carp"> Lorem ipsum dolor sit amet consectetur adipisicing.
               Lorem ipsum dolor sit amet consecte</p>
 
 
-            <button style="width: 140px;
+            <button data-toggle="modal" data-target="#staticBackdrop" style="width: 140px;
           height: 53px;
           
           " class="btn custombtn btn-outline-light my-4">
@@ -462,61 +457,224 @@
 
     </div>
     <!-- footer starting  -->
-    <nav style="background-color: rgba(0, 0, 0, 0.904);">
-      <div style="flex-direction: row;" class="row rownobreak mx-0 my-0">
+    <footer style="background-color: rgba(0, 0, 0, 0.466);padding-top: 130px;">
+      <div style="flex-direction: row;align-items: flex-start;" class="row rownobreak mx-0 my-0">
 
-        
-        <div class="col-lg-2 col-xl-2 mx-2 my-2  col-md-4 col-sm-11 col-11">
-          <a class="navbar-brand" href="#"><img src="./img/logo.gif" class="img-fluid" id="logo" alt=""></a>
-          <p class="my-3">
+
+        <div class="col-lg-6 col-xl-3 col-md-6 col-sm-11 col-11 mx-3 my-4 footercol  ">
+          <a class="navbar-brand" href="#"><img src="./img/logo.gif" class="img-fluid" id="footerlogo" alt=""></a>
+          <p class="my-3 footerpara">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsa mollitia laudantium. Ad, delectus eos
             itaque hic eligendi similique quia et nostrum dolorem recusandae modi eaque quas dolore nihil minus odit
             facere veritatis sequi ipsam maiores. Dolores doloribus officia harum!
           </p>
         </div>
-        <div class="col-lg-2 col-xl-2 mx-2 my-2  col-md-4 col-sm-11 col-11">
-          <a class="navbar-brand" href="#"><img src="./img/logo.gif" class="img-fluid" id="logo" alt=""></a>
-          <p class="my-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsa mollitia laudantium. Ad, delectus eos
-            itaque hic eligendi similique quia et nostrum dolorem recusandae modi eaque quas dolore nihil minus odit
-            facere veritatis sequi ipsam maiores. Dolores doloribus officia harum!
-          </p>
+        <!-- recent post starting  -->
+        <div class="col-lg-4 col-xl-2 col-md-4 col-sm-11 col-11 mx-3 my-4 footercol ">
+          <h2 class="mb-2">Recent Posts</h2>
+          <div class="my-3" style="    border-bottom: 1px solid rgb(255 248 248 / 19%);  padding-bottom: 21px;">
+            <p class=" footerpara">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsa mollitia laudantium. Ad, delectus
+              eos
+
+            </p>
+          </div>
+          <div style="border-bottom: 1px solid rgb(255 248 248 / 19%);  padding-bottom: 21px; " class="my-3">
+            <p style="text-align: left; margin: 0px;    color: black; text-shadow: 1px 1px 13px #b5b5b5;">September
+              08/2021</p>
+            <p class=" my-0 footerpara" style="color: burlywood;">
+
+              Lorem ipsum dolor sit amet, consectetur adipisi
+
+            </p>
+          </div>
+          <div class="my-3">
+            <p style="text-align: left; margin: 0px;    color: black; text-shadow: 1px 1px 13px #b5b5b5;">September
+              08/2021</p>
+            <p class=" my-0 footerpara" style="color: rgb(66, 66, 66);">
+
+              Lorem ipsum dolor sit amet, consectetur adipisi
+
+            </p>
+          </div>
+
+
         </div>
-        <div class="col-lg-2 col-xl-2 mx-2 my-2  col-md-4 col-sm-11 col-11">
-          <a class="navbar-brand" href="#"><img src="./img/logo.gif" class="img-fluid" id="logo" alt=""></a>
-          <p class="my-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsa mollitia laudantium. Ad, delectus eos
-            itaque hic eligendi similique quia et nostrum dolorem recusandae modi eaque quas dolore nihil minus odit
-            facere veritatis sequi ipsam maiores. Dolores doloribus officia harum!
-          </p>
+        <div class="col-lg-5 col-xl-2 col-md-5 col-sm-11 col-11 mx-3 my-4 footercol ">
+          <h2 class="mb-2">Ouer Twitter</h2>
+          <div class="my-3" style="    border-bottom: 1px solid rgb(255 248 248 / 19%);  padding-bottom: 21px;">
+            <p class=" footerpara">
+              <span style="color: turquoise;">@Twitter</span> ipsum dolor sit amet, consectetur adipisicing elit.
+              Facilis ipsa mollitia laudantium. Ad, delectus
+              eos
+
+            </p>
+          </div>
+          <div style="border-bottom: 1px solid rgb(255 248 248 / 19%);  padding-bottom: 21px; " class="my-3">
+
+            <p class=" my-0 footerpara" style="color: burlywood;">
+
+              <span style="color: turquoise;">@Recent</span> ipsum dolor sit amet, consectetur adipisi Lorem ipsum dolor
+              sit, amet consectetur.
+
+            </p>
+            <p style="text-align: left; margin: 0px;    color: black; text-shadow: 1px 1px 13px #b5b5b5;">
+              5 min ago</p>
+          </div>
+          <div class="my-3">
+
+            <p class=" my-0 footerpara" style="color: rgb(66, 66, 66);">
+
+              <span style="color: turquoise;">@Posts</span> ipsum dolor sit Lorem ipsum dolor sit.
+
+            </p>
+            <p style="text-align: left; margin: 0px;    color: black; text-shadow: 1px 1px 13px #b5b5b5;">
+              45 min ago</p>
+          </div>
+
         </div>
-        <div class="col-lg-2 col-xl-2 mx-2 my-2  col-md-4 col-sm-11 col-11">
-          <a class="navbar-brand" href="#"><img src="./img/logo.gif" class="img-fluid" id="logo" alt=""></a>
-          <p class="my-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsa mollitia laudantium. Ad, delectus eos
-            itaque hic eligendi similique quia et nostrum dolorem recusandae modi eaque quas dolore nihil minus odit
-            facere veritatis sequi ipsam maiores. Dolores doloribus officia harum!
-          </p>
-        </div>
+        <div class="col-lg-5 col-xl-2 col-md-5 col-sm-11 col-11 mx-3 my-4 footercol ">
+          <h2 class="mb-4">Dribble Widgt</h2>
+          <div class="row my-0 mx-0 ">
+
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+              <figure style="position: relative;width: 100%;">
+                <img src="./img/14.jpg" style=" width:100%; " alt="">
+              </figure>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+              <figure style="position: relative;width: 100%;">
+                <img src="./img/15.jpg" style=" width:100%; " alt="">
+              </figure>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+              <figure style="position: relative;width: 100%;">
+                <img src="./img/16.jpg" style=" width:100%; " alt="">
+              </figure>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+              <figure style="position: relative;width: 100%;">
+                <img src="./img/17.jpg" style=" width:100%; " alt="">
+              </figure>
+            </div>
 
 
 
+
+
+          </div>
+
+        </div>
+        <div class="col-12 col-xl-12 col-lg-12 my-3 mx-0 rownobreak col-md-12 col-sm-12">
+          CopyRights © 2021 to Mohammad Awais , All Rights Reserved
+        </div>
       </div>
-      
-      
-     
-
-    </nav>
 
 
 
+
+
+
+
+
+
+    </footer>
     <!-- footer ending  -->
   </section>
   <!-- Status Ending  -->
 
 
+  <!-- contact form  -->
 
 
+
+
+
+  <!-- Modal -->
+  <div style="z-index: 34234234;" class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+
+
+
+        <div class="modal-body p-0 m-0">
+          <button style="    position: absolute;
+          top: -3%;
+          right: -2%;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+            <i style="background: black;border-radius: 100%; z-index: 2323; color: white;text-shadow: 1px 1px 1px black;"
+              aria-hidden="true" class="far fa-times-circle"></i>
+          </button>
+          <div class="row">
+            <div id="contactls" class=" contact1st col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+
+           
+              <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6 col-6">
+
+                <h1>Get In</h1>
+              </div>
+              <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6 col-6">
+
+                <h1>Touch</h1>
+              </div>
+            </div>
+              <p class="contactp">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque natus quam dolorum nostrum consectetur
+                aliquam, dolores repudiandae nulla consequatur dicta!\
+              </p>
+            </div>
+
+
+            <div class=" contactform p-3 col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+
+
+              <form  action="#">
+
+                <h5 class=" pl-2 modal-title" id="staticBackdropLabel">Contact Us</h5>
+                <div class="row">
+                <div id="fname" class="  custombefore nameing col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+                  <input autocomplete="c" id="fname" required type="text"  class="name"><span id="spanname" class="contactspan">First Name</span>
+            </div>
+            
+            <div id="lname" class="  custombefore nameing col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+              <input  autocomplete="c" required  id="lname" type="text"  class=" lname name"><span id="spanlname" class="contactspan">Last Name</span>
+            </div>
+            <div id="emailemail" class=" emailsub custombefore col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12">
+              <input  autocomplete="c" required id="emailemail" type="Email"  class="name email "><span id="spanemail" class="contactspan">Email</span>
+
+            </div>
+            <div id="subjects" class=" emailsub custombefore  col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12">
+              <input autocomplete="c" required   type="Text" id="subjected" class="name subject ">
+              <span id="spansubject" class="contactspan">Subject</span>
+
+            </div>
+            <div id="textareadiv" class=" custombefore emailsub  col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12">
+              <textarea  autocomplete="c" required name="textarea" class="name" id="textarea"  cols="5" rows="3"></textarea>
+              <span id="spanmessage" class="contactspan">
+                Message
+              </span>
+            </div>
+          </div>
+            <button id="contactbtn" class="btn btn-outline-dark text-center">Send Message</button>
+          </form>
+            
+          </div>
+          
+          
+          
+          
+        </div>
+          <!--Row end-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- contact form  -->
   <!-- body end here -->
 
 
@@ -569,7 +727,92 @@
       }, 100);
 
     };
+    // script for responsive nav bar 
 
+
+    let navbarbtn = document.getElementById('navbtn');
+    let navbarhead = document.getElementById('navbarhead');
+    let navulli = document.getElementById('navulli');
+
+    let cond = 2;
+    const changenav = () => {
+      // if(navbarhead.style.position=='absolute')
+      console.log(cond);
+      if (cond % 2 === 0) {
+        navbarhead.style.cssText = 'position:static !important;background: radial-gradient(#112f31, #211e1e);';
+        navulli.style.cssText = 'align-items: center;';
+        cond++;
+      }
+      else {
+        navbarhead.style.cssText = 'position:absolute !important;background:transparent';
+        cond++;
+      }
+    }
+
+
+    navbarbtn.addEventListener('click', changenav);
+
+
+    // ............................
+
+    let all=document.querySelectorAll(".name");
+    let contactfname=document.getElementById("spanname");
+    let contactlname=document.getElementById("spanlname");
+    let contactemail=document.getElementById("spanemail");
+    let contactsubject=document.getElementById("spansubject");
+    let contactmessage=document.getElementById("spanmessage");
+    let cfname=document.getElementById("fname");
+    let clname=document.getElementById("lname");
+    let cemail=document.getElementById("emailemail");
+    let csubject=document.getElementById("subjected");
+    let cmessage=document.getElementById("textarea");
+    let checker=0;
+
+ 
+   
+  cfname.onmousedown=()=>{
+       
+       if(contactfname.style.display=="none")
+       {
+         contactfname.style.display="inherit";
+       }
+       else{
+         contactfname.style.display="none";
+   
+       }
+      
+     }
+  cfname.onmouseup=()=>{
+       
+       if(contactfname.style.display=="none")
+       {
+         contactfname.style.display="inherit";
+       }
+       else{
+         contactfname.style.display="none";
+   
+       }
+      
+     }
+
+     clname.onmousedown=function(){
+    if(contactlname.style.display=="none")
+    {
+      contactlname.style.display="inherit";
+    }
+    else{
+      contactlname.style.display="none";
+
+    }
+  }
+
+
+
+
+
+
+
+     
 
 
 

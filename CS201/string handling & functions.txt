@@ -1,0 +1,3 @@
+...........................................................
+ctype.h                   contain string Conversion Functions
+strings.h                 contain string functions like string to Integers etc

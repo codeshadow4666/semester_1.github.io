@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 live updates</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+background: url('black.jpg');
+        }
+        html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    font-size: 62.2%;
+}
+*{
+    color: white;
+    font-size: 1rem;
+
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+    background: black;
+    color: white;
+    outline: none;
+}
+.outer{
+    height: 500px;
+    width: 500px;
+    box-shadow: 1px 1px 12px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#3a0707, #1d1a1a);
+}
+.flexc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+}
+.para{
+    color: white;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    margin: 10px 0px;
+    width: 200px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.flag{
+    width: 300px;
+    height: 200px;
+}
+#name{
+    font-size: 3rem;
+    width: 50%;
+    text-align: center;
+}
+svg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="outer">
+<div id="flag" class="flag flex">
+   
+</div>
+
+<h1 id="name"></h1>
+
+
+   <input type="text" placeholder="Enter country name & get Info" id="para" class="para">
+    <button onmousedown="setout()" id="btn">
+        Click
+    </button>
+</div>
+                                      <!-- javascript starting here  -->
+<script>
+    let btn=document.getElementById('btn');
+  
+   
+    let flag=document.getElementById('flag');
+    let name=document.getElementById('name');
+let country='united states';
+
+function setout(){
+    
+        
+        let input=document.getElementById('para').value;
+        console.log(input);
+
+    
+country=input;
+flag.innerHTML="";
+name.innerHTML=``;
+const eq= new XMLHttpRequest;
+eq.open('Get',`https://restcountries.eu/rest/v2/name/${country}`,true);
+
+eq.send();
+eq.onload=function(){
+    
+    const [ata]=JSON.parse(this.responseText);
+    
+   
+    console.log(ata.flag);
+    
+    fetch(`${ata.flag}`)
+  .then(response => response.text())
+  .then(svg => flag.insertAdjacentHTML("afterbegin", svg));
+  name.innerHTML=`${ata.name}`;
+
+}
+
+}
+
+
+
+    
+    const req= new XMLHttpRequest;
+req.open('Get',`https://restcountries.eu/rest/v2/name/${country}`,true);
+
+req.send();
+
+req.onload=function(){
+    
+    const [data]=JSON.parse(this.responseText);
+    
+   
+    console.log(data.flag);
+    
+    fetch(`${data.flag}`)
+  .then(response => response.text())
+  .then(svg => flag.insertAdjacentHTML("afterbegin", svg));
+  name.innerHTML=`${data.name}`;
+
+}
+
+
+
+  
+
+  
+
+
+
+
+   
+
+
+
+</script>
+
+</body>
+</html>

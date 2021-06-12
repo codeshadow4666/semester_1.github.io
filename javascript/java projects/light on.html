@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <title>Light ON & OFF</title>
+    <style>
+        body{
+            background-color: black;
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            
+        }
+      #bulb {
+          font-size: 200px;
+          color: rgba(255, 252, 252, 0.459);
+      }
+      #btn:hover{
+cursor: pointer;
+
+      }
+      #btn{
+          font-size: 100px;
+          color: rgba(255, 252, 252, 0.459);
+          margin: 30px 0px;
+      }
+      #outer{
+          display: grid;
+          place-items: center;
+      }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        
+<span id="bulb" class="fa"></span>
+<span id="btn" class="fa"></span>
+    </div>
+</body>
+<script>
+    let bulb = document.getElementById('bulb');
+    let btn = document.getElementById('btn');
+    let a=true;
+    btn.innerHTML="&#xf204";
+    bulb.innerHTML = "&#xf0eb;";
+
+const light=()=>{
+if(a==true)
+{
+    btn.innerHTML="&#xf205";
+    bulb.style.color="yellow";
+    btn.style.color="black";
+    document.body.style.background="radial-gradient(white, #f3dd1b)";
+    a=false;
+}
+else{
+    btn.style.color="rgba(255, 252, 252, 0.459)";
+    btn.innerHTML="&#xf204";
+    document.body.style.background="black";
+    bulb.style.color="rgba(255, 252, 252, 0.459)"; 
+    a=true; 
+}
+}
+    btn.addEventListener('click',light);
+</script>
+
+</html>

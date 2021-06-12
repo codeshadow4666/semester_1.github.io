@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        #outer{
+            display: grid;
+            place-items: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(rgb(88, 87, 87),black);
+            transform: translate(-50%,-50%);
+        }
+        input{
+            display: inline-block;
+            margin: 10px 0px;
+        }
+        .inner{
+            display: flex;
+            flex-direction: column;
+    
+        }
+        </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="inner">
+
+          <input type="text" id="nd" placeholder="Enter Number">
+          <p id="2nd"></p>
+          <input type="number" id="1st" placeholder="Enter Number">
+          <input type="text" id="operator" placeholder="Enter Operator">
+            <button  id="btn1">
+                Click
+            </button>
+            <button id="btn2">
+                Click for fetch
+            </button>
+        </div>
+    </div>
+
+
+
+<script>
+    let btn1=document.getElementById('btn1');
+    let btn2=document.getElementById('btn2');
+    let a=document.getElementById('2nd');
+    
+    btn1.addEventListener('click',function(){
+
+const ajx= new XMLHttpRequest();
+ajx.open('get','https://api.covid19api.com/summary',true);
+ajx.onprogress=function(){
+    console.log("\nrequest in progress\n");
+
+}
+ajx.onload=function(){
+    if(this.status===200)
+    {
+        console.log('All ok !');
+        console.log(this.responseText);
+        // let a=document.getElementById('nd');
+        let c=this.responseText;
+        console.log(c);
+        // a.innerHTML = "html";
+        a.innerHTML = c;
+    }
+    else{
+        console.log("error occurs");
+
+    }
+}
+ajx.send();
+
+    });
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

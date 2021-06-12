@@ -1,84 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice</title>
     <style>
-        body {
-            display: grid;
-            place-items: center;
+    #outer{
+        display: grid;
+        place-items: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(rgb(88, 87, 87),black);
+        transform: translate(-50%,-50%);
+    }
+    input{
+        display: inline-block;
+        margin: 10px 0px;
+    }
+    .inner{
+        display: flex;
+        flex-direction: column;
 
-        }
-
-        input {
-            width: 300px;
-            height: 50px;
-            font-size: 1rem;
-        }
+    }
     </style>
 </head>
-
 <body>
-    <div id="result">
+    <div id="outer">
+        <div class="inner">
 
+          <input type="number" id="2nd" placeholder="Enter Number">
+          <input type="number" id="1st" placeholder="Enter Number">
+          <input type="text" id="operator" placeholder="Enter Operator">
+            <button onmousedown="cal()" id="btn">
+                Click
+            </button>
+        </div>
     </div>
-    <br><br>
-    <form action="/action_page.php">
-        <label for="cars">Choose a car:</label>
-        <select name="cars" id="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-        </select>
-        <br><br>
-        <input type="submit" value="Submit">
-    </form>
-    <p style="opacity: 0;" id="para">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores temporibus recusandae harum est
-        inventore nam magnam perspiciatis, cumque explicabo alias asperiores repudiandae maiores libero quibusdam quas
-        ea fugit nobis?
-    </p>
-    <button onclick="fading()" id="btnbtn">
-        click me
-    </button>
     <script>
-        const aa = document.getElementById('cars');
-        aa.addEventListener('change', function () {
-            const result = document.getElementById('result');
-            let c = aa.value;
 
-            result.innerHTML = `Selected Car = ${aa.value}`;
+        const button=document.getElementById("btn");
+      
 
 
+        // functions stariting................
 
-            document.body.style.background = 'red';
-        });
+ 
+// substraction function 
+function sub(a,b)
+{
+    return a-b;
+}
+// substraction function 
+// multiplication function 
+function mult(a,b)
+{
+    return a*b;
+}
+// multiplication function 
+// Division function 
+function division(a,b)
+{
+    return a/b;
+}
+// Division function 
+// main funciton 
+let calculator=(a,b,oper)=>{
+if(oper==="+"){
+  let res=  a+b;
+  if((a==="1")||(b==="1")){
+      alert("brother string");
+  }
+  
+  alert(`${a} + ${b} = ${res}`)
+}
+else if(oper==="-"){
+    let res=  sub(a,b);
+  alert(`${a} - ${b} = ${res}`)  
+}
+else if(oper==="*"){
+    let res=  mult(a,b);
+  alert(`${a} * ${b} = ${res}`)  
+}
+else if(oper==="/"){
+    let res=  division(a,b);
+  alert(`${a} / ${b} = ${res}`)  
+}
+else{
+    alert("Incorrect Operator !")
+}
+
+}
+// main funciton 
+        // functions ending................
         
-
-        function fading(){
-            let a=0.1;
-           let interval= setInterval(() => {
-                let p=document.getElementById('para');
-                
-                p.style.opacity=a;
-                a=a+0.1;
-                let check =Math.floor(a);
-                if(check==1){
-                    console.log('ok');
-                    clearInterval(interval);
-
-                }
-               
-            }, 200);
-        }
-
+// event function 
+function cal(){
+    let fst=document.getElementById("1st").valueAsNumber;
+        let sec=document.getElementById("2nd").valueAsNumber;
+        let oper=document.getElementById("operator").value;
+    calculator(fst,sec,oper);
+    // alert(`${fst} * ${sec} = ${oper}`)  
+}
+// event function 
 
     </script>
-
 </body>
-
 </html>

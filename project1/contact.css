@@ -1,0 +1,70 @@
+.contactp{
+    word-wrap: break-word;
+    color: white;
+}
+.contact1st h1{
+    color: white;
+}
+
+.contactform input ,#textarea{
+    display: inline-block;
+    position: relative;
+    margin: 22px 0px;
+    width: 100%;
+    outline: none !important;
+    border: none;
+    border-bottom: 2px solid #9c9a95;
+    padding: 5px;
+
+}
+.modal-body .row{
+    margin: 0px !important;
+}
+#textarea{
+    outline: none;
+margin-top: 10px;
+}
+#contactbtn{
+    margin: 0px auto;
+    display: block;
+    margin-top: 20px;
+}
+#contactls{
+    background: linear-gradient(#000000,#0000007a),url(./img/contact.jpg);
+
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.contactspan{
+    color: rgb(37, 37, 37);
+    position: absolute;
+    display: inherit;
+    transition: 0.5s;
+    top: 34%;
+
+}
+.custombefore:hover .contactspan{
+    top: 0%;
+    
+}
+
+.custombefore{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 800px)  and (max-width: 1500px){
+    .modal-dialog{
+        max-width: 800px !important;
+    }
+    
+ }

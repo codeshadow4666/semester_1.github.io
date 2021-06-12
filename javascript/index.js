@@ -1,5 +1,13 @@
-let a= Date.now();
-console.log(new Date(a).toLocaleString());
-const curTime= new Date();
-let b=new Date().getTime();
-console.log(new Date (b).toLocaleString());
+const countries={
+    a:"pakistan",
+    b:"india",
+    c:"america",
+    d:"russia"
+}
+const erer={
+    ...countries
+}
+let {a,b,c,d}=countries;
+
+console.log(a);
+console.log(countries.a);

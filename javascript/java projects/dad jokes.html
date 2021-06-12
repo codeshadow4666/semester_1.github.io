@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad jokes</title>
+    <style>
+        body{
+            background: linear-gradient(23deg,rgb(18, 14, 56),rgb(106 207 255 / 49%));
+            color: white;
+        }
+        .outer{
+            position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    background: radial-gradient(#032f0a,#0f5ef580);
+        }
+        .outer h1,#btn{
+            margin: 50px auto;
+display: block;
+text-align: center;
+        }
+        #btn{
+            font-size: 2rem;
+            color: blanchedalmond;
+            outline: none;
+            padding: 3px 20px;
+            background: linear-gradient(
+45deg
+, black, transparent);
+        }
+        #btn:hover{
+            cursor: pointer;
+        }
+        #load{
+margin: auto;
+display: block;
+text-align: center;
+    font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h1>English Jokes</h1>
+        <div id="joke" class="jokes">
+<div id="load">Joke is loading.....</div>
+        </div>
+        <button id="btn">
+            Next 
+        </button>
+    </div>
+
+
+
+
+<!-- javascript is starting here  -->
+
+
+<script>
+
+
+let joke=document.getElementById('joke');
+let btn=document.getElementById('btn');
+const createjoke= async ()=>{
+
+    const setHeader = {
+headers: {
+Accept : "application/json"
+}
+}
+fetch('https://icanhazdadjoke.com', setHeader)
+.then((res) => res.json() )
+.then( (data) => {
+joke.innerHTML = data.joke;
+}).catch((error) => {
+console.log(error);
+})   
+
+}
+btn.addEventListener('click',createjoke);
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<!-- javascript is ending here  -->
+
+
+</body>
+</html>
