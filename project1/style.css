@@ -476,6 +476,28 @@ cursor: pointer;
         height: 590px !important;
     }
 }
+@media only screen and (min-width: 1px)  and (max-width: 800px){
+  
+    /* scroll bar  */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  ::-webkit-scrollbar-track {
+    background:rgb(0, 0, 0); 
+    
+  }
+  ::-webkit-scrollbar-thumb:hover {
+     
+    background: rgba(255, 255, 255, 0.863); 
+    cursor: pointer !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255); 
+    border-radius: 10px;
+  }
+ 
+/* scroll bar  */
+}
 
 
 

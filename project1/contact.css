@@ -4,7 +4,10 @@
 }
 .contact1st h1{
     color: white;
+    margin-bottom: 22px;
 }
+
+
 
 .contactform input ,#textarea{
     display: inline-block;
@@ -13,8 +16,8 @@
     width: 100%;
     outline: none !important;
     border: none;
-    border-bottom: 2px solid #9c9a95;
-    padding: 5px;
+    border-bottom: 2px solid #607d8b;
+    padding: 10px;
 
 }
 .modal-body .row{
@@ -30,28 +33,34 @@ margin-top: 10px;
     margin-top: 20px;
 }
 #contactls{
-    background: linear-gradient(#000000,#0000007a),url(./img/contact.jpg);
+    background: linear-gradient(#607d8b,#607d8b5e),url(./img/contact2.jpg);
 
 background-size: cover;
 background-repeat: no-repeat;
+height: 580px;
 
 }
-
+textarea{
+    resize: none;
+}
 .contactspan{
-    color: rgb(37, 37, 37);
+   color: rgb(96 125 139 / 58%);
     position: absolute;
     display: inherit;
-    transition: 0.5s;
+    transition: 0.3s;
     top: 34%;
-
-}
-.custombefore:hover .contactspan{
-    top: 0%;
+    left: 6%;
+    line-height: 2;
     
+}
+#spanmessage{
+    
+    top: 13%;
 }
 
 .custombefore{
     position: relative;
+   
 }
 
 
@@ -62,9 +71,160 @@ background-repeat: no-repeat;
 
 
 
-@media only screen and (min-width: 800px)  and (max-width: 1500px){
+@media only screen and (min-width: 991px)  and (max-width: 1500px){
     .modal-dialog{
         max-width: 800px !important;
     }
     
  }
+@media only screen and (min-width: 701px )  and (max-width: 990px){
+    .modal-dialog{
+        max-width: 600px !important;
+    }
+    #getin,#touch{
+     display: inline-block;
+        margin: 0px 4px;
+        margin-bottom: 25px !important;
+
+    }
+    #contactls{
+
+        height: 223px !important;
+    }
+    .contactspan{
+        left: 4% !important;
+    }
+    
+ }
+@media only screen and (min-width: 600px )  and (max-width: 701px){
+    .modal-dialog{
+        max-width: 500px !important;
+    }
+    #contactls{
+
+        height: 223px !important;
+    }
+    .contactspan{
+        left: 5% !important;
+    }
+    #getin,#touch{
+        display: inline-block;
+           margin: 0px 4px;
+           margin-bottom: 25px !important;
+   
+       }
+    
+ }
+@media only screen and (min-width: 540px )  and (max-width: 600px){
+    .modal-dialog{
+        max-width: 450px !important;
+        margin: auto;
+        margin-top: 53px;
+    }
+    .contactspan{
+        left: 3% !important;
+    }
+    #contactls{
+
+        height: 223px !important;
+    }
+    #getin,#touch{
+        display: inline-block;
+           margin: 0px 4px;
+           margin-bottom: 25px !important;
+   
+       }
+ }
+#getin,#touch{
+    margin-bottom: 0px;
+    
+}
+#contactlsp{
+    max-width: 400px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 100px )  and (max-width: 540px){
+    .modal-dialog{
+        max-width: 90% !important;
+        margin: auto;
+        margin-top: 53px;
+    }
+    #contactls{
+
+        height: 250px !important;
+    }
+    #getin,#touch{
+        display: inline-block;
+           margin: 0px 4px;
+           margin-bottom: 25px !important;
+   
+       }
+       #contactlsp{
+        max-width: 300px;
+    }
+    
+ }
+ @media only screen and (min-width: 100px )  and (max-width: 300px){
+    #contactls{
+
+        height: 350px !important;
+    }
+    .parap {
+        max-width: 240px;
+       
+    }
+}
+ @media only screen and (min-width: 300px )  and (max-width: 450px){
+  
+    .parap {
+        max-width: 300px;
+       
+    }
+}
+#contactls{
+    position: relative;
+}
+/* #contactls::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: red;
+
+
+}  */
+/* @media only screen and (min-width: 100px )  and (max-width: 500px){
+    
+    .contactspan{
+        left: 12% !important;
+    }
+ } */
+#contactbtn::after{
+
+    content:"";
+    position: absolute;
+width: 100%;
+height: 0%;
+background-color: #ffffff24;
+top: 0%;
+left: 0%;
+transition: 0.5s;
+
+}
+#contactbtn:hover#contactbtn::after{
+    height: 100%;
+}
+#contactbtn{
+    background-color: rgb(58 127 160);
+position: relative;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+}

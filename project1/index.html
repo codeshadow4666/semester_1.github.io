@@ -592,7 +592,7 @@
 
 
   <!-- Modal -->
-  <div style="z-index: 34234234;" class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+  <div style="z-index: 34234234;padding: 0px !important;" class="modal fade p-0" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -610,19 +610,21 @@
           </button>
           <div class="row">
             <div id="contactls" class=" contact1st col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
-              <div class="row">
+         
 
            
-              <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6 col-6">
+             <div>
 
-                <h1>Get In</h1>
+               
+               <h1  class="mt-3" id="getin" >Get In</h1>
+               
+               
+               
+               <h1 id="touch">Touch</h1>
+               
               </div>
-              <div class="col-lg-12 col-xl-12 col-md-6 col-sm-6 col-6">
-
-                <h1>Touch</h1>
-              </div>
-            </div>
-              <p class="contactp">
+            
+              <p id="contactlsp" class="contactp">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque natus quam dolorum nostrum consectetur
                 aliquam, dolores repudiandae nulla consequatur dicta!\
               </p>
@@ -634,7 +636,7 @@
 
               <form  action="#">
 
-                <h5 class=" pl-2 modal-title" id="staticBackdropLabel">Contact Us</h5>
+                <h5 class=" pl-2 mt-4 modal-title" style="color: #59879d;text-shadow: 1px 1px 1px black;" id="staticBackdropLabel">Contact Us</h5>
                 <div class="row">
                 <div id="fname" class="  custombefore nameing col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
                   <input autocomplete="c" id="fname" required type="text"  class="name"><span id="spanname" class="contactspan">First Name</span>
@@ -659,7 +661,7 @@
               </span>
             </div>
           </div>
-            <button id="contactbtn" class="btn btn-outline-dark text-center">Send Message</button>
+            <button id="contactbtn" class="btn  text-center">Send Message</button>
           </form>
             
           </div>
@@ -767,46 +769,98 @@
     let csubject=document.getElementById("subjected");
     let cmessage=document.getElementById("textarea");
     let checker=0;
-
+let arrr=0;
  
    
-  cfname.onmousedown=()=>{
-       
-       if(contactfname.style.display=="none")
-       {
-         contactfname.style.display="inherit";
-       }
-       else{
-         contactfname.style.display="none";
+   all.forEach((value,index,arr)=>{
+     setInterval(() => {
+
+//       arr[0].addEventListener('click',()=>{
+
+// contactfname.style.cssText="top: 0%;";
+// });
+//       arr[1].addEventListener('click',()=>{
+
+//         contactlname.style.cssText="top: 0%;";
+// });
+//       arr[2].addEventListener('click',()=>{
+
+//         contactemail.style.cssText="top: 0%;";
+// });
+//       arr[3].addEventListener('click',()=>{
+
+//         contactsubject.style.cssText="top: 0%;";
+// });
+//       arr[4].addEventListener('click',()=>{
+
+//         contactmessage.style.cssText="top: 0%;";
+// });
+
+
+      if(arr[0].value=="")
+{
+  contactfname.style.cssText="top: 34%;";
+  
+}
+else{
+  contactfname.style.cssText="top: -3%;";
+  
+}
+      if(arr[1].value=="")
+     {
+  contactlname.style.cssText="top: 34%;";
+  
+}
+else{
+  contactlname.style.cssText="top: -3%;";
+  
+}
+
+
+      if(arr[2].value=="")
+{
+   contactemail.style.cssText="top: 34%;";
+  
+}
+else{
+   contactemail.style.cssText="top: -3%;";
+  
+}
+      if(arr[3].value=="")
+{
+  contactsubject.style.cssText="top: 34%;";
+  
+}
+else{
+  contactsubject.style.cssText="top: -3%;";
+  
+}
+      if(arr[4].value=="")
+{
+  contactmessage.style.cssText="top: 13%;";
+  
+}
+else{
+  contactmessage.style.cssText="top: -10%;";
+  
+}
+
+  
+
+
    
-       }
-      
-     }
-  cfname.onmouseup=()=>{
-       
-       if(contactfname.style.display=="none")
-       {
-         contactfname.style.display="inherit";
-       }
-       else{
-         contactfname.style.display="none";
-   
-       }
-      
-     }
-
-     clname.onmousedown=function(){
-    if(contactlname.style.display=="none")
-    {
-      contactlname.style.display="inherit";
-    }
-    else{
-      contactlname.style.display="none";
-
-    }
-  }
+     
 
 
+    
+
+
+
+}, 1);
+
+
+   })
+ 
 
 
 
