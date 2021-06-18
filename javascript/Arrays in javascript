@@ -232,3 +232,29 @@ let r=numbers.reduce((acum,value)=>{
 
 console.log(numbers);
 console.log(r); 
+
+...........................................................................................................
+
+                                    Array to String conversion
+...........................................................................................................
+
+join();                          used to convert array into string
+
+syntax;               
+
+            array.join("enter character which you want in every array element ");
+example;
+
+          let array=["hellow","bhai"]
+
+          array.join(" "); // output= hellow bhai
+          array.join(","); // output= hellow,bhai
+          array.join("/"); // output= hellow/bhai
+
+other methods:
+
+tostring();
+toLocalstring();
+let c=array +" ";    //    but all of these insert bullets between each element of array 
+...........................................................................................................
+...........................................................................................................
