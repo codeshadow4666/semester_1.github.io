@@ -38,5 +38,75 @@ The Number constructor:
 var n = Number(str);
 The parseFloat function:
 var n = parseFloat(str); 
+...............................................................
+...............................................................
+...............................................................
+.....................Call & apply method.......................
+
+Both are almost same.
+difference:
+        call                          apply
+ take arguments seperately    |     Take arguments as a array.
 
 
+
+
+
+ Example:
+ let obj1={
+    name:"Awais",
+    level:"A",
+    display:function(){
+        console.log(`My name is ${this.name} , I am '${this.level}' level programmer`);
+    }
+
+}
+let obj={
+    name:"Kai",
+    level:"B+"
+   
+
+}
+let a=obj1.display.call(obj);
+let b=obj1.display.apply(obj);//can also be used with apply method . same output
+
+let arr=[1,2334,434,2,14,22312,43545454,3];
+// Math.min or max doest work with array , by this way we can use for array. 
+let max= Math.min.apply(null,arr);
+console.log(max);   
+
+
+...............................................................
+...........................Bind method ........................
+
+take 1st argument as a object   
+used to combined function with an object 
+
+return:
+              new function
+syntax:      
+              let a=  functionname.bind(objectname);      retunr new function
+                                                          var a contain new function
+Example:
+let obj1={
+    name:"Awais",
+    level:"A"
+   
+
+}
+let obj={
+    name:"Kai",
+    level:"B+"
+   
+
+}
+function display(){
+    console.log(`My name is ${this.name} , I am '${this.level}' level programmer`);
+}
+
+let a=display.bind(obj);
+let b=display.bind(obj1);
+b();
+a();              
+
+...............................................................
